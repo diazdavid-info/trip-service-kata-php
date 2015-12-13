@@ -2,7 +2,7 @@
 
 namespace TripServiceKata\Trip;
 
-use User;
+use TripServiceKata\User\User;
 use TripServiceKata\Exception\DependentClassCalledDuringUnitTestException;
 
 class TripDAO
@@ -10,5 +10,9 @@ class TripDAO
     public static function findTripsByUser(User $user)
     {
         throw new DependentClassCalledDuringUnitTestException('TripDAO should not be invoked on an unit test.');
+    }
+
+    public function findListTripByUser(User $user)
+    {
     }
 }

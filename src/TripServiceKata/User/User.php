@@ -36,4 +36,8 @@ class User
     {
         $this->trips[] = $trip;
     }
+
+    public function isMyFriend(User $user)
+    {
+    }
 }
