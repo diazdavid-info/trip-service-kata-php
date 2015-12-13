@@ -61,14 +61,4 @@ class TripService
             throw new UserNotLoggedInException();
         }
     }
-
-    /**
-     * @param $friend
-     * @param $loggedUser
-     * @return bool
-     */
-    private function areFriends($friend, $loggedUser)
-    {
-        return $friend == $loggedUser;
-    }
 }
